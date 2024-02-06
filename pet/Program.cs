@@ -100,6 +100,12 @@ class Assignment1
             {
                 Console.WriteLine("Invalid input. Please choose 1, 2, 3, or 4.");
             }
+            // Simulate Time Passage 
+            hunger = Math.Min(10, hunger + 1);
+            happiness = Math.Max(0, happiness - 1);
+
+            // Pause for better user experience
+            Thread.Sleep(1000);
         }
     }
 }
