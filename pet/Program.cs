@@ -82,6 +82,24 @@ class Assignment1
                 Console.WriteLine("Exiting the Virtual Pet Simulator. Until next time....\n Goodbye! Prasanna Chinnu");
                 break;
             }
+            // Warning message for the user 
+            else if (hunger >= 9)
+            {
+                health = Math.Max(0, health - 2);
+                Console.WriteLine($"{petName} refuses to play. Too hungry! Health decreased. Feed your pet to continue playing!!");
+            }
+            else if (happiness <= 1)
+            {
+                Console.WriteLine($"{petName} was unhappy!! Try to cheer it up!!");
+            }
+            else if (health <= 1)
+            {
+                Console.WriteLine($"{petName} was not healthy!! Try to bring back it to good health");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please choose 1, 2, 3, or 4.");
+            }
         }
     }
 }
