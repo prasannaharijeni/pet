@@ -32,9 +32,22 @@ class Assignment1
             Console.WriteLine("Choose an action: \n1. Feed\n2. Play\n3. Rest\n4. Exit");
             //Input option selected from the user
             string userInput = Console.ReadLine();
-            
+            // Perform Actions
+            // Feed the pet
+            if (userInput == "1" && hunger <= 7 && happiness >= 2 && health >= 2)
+            {
+                hunger = Math.Max(0, hunger - 2);
+                health = Math.Min(10, health + 1);
+                Console.WriteLine($"{petName} has been fed. Hunger decreased, health increased.");
             }
-        }
+            // Feed the pet to resume playing
+            else if (userInput == "1" && hunger >= 8)
+            {
+                hunger = Math.Max(0, hunger - 3);
+                health = Math.Min(10, health + 1);
+                Console.WriteLine($"{petName} has been fed. Hunger decreased!!!");
 
-        }
+            }
+
+    }
 }
