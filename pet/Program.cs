@@ -76,6 +76,12 @@ class Assignment1
                 happiness = Math.Max(0, happiness - 1);
                 Console.WriteLine($"{petName} is resting. Health increased, happiness decreased slightly.");
             }
+            // Exit the game!!!
+            else if (userInput == "4")
+            {
+                Console.WriteLine("Exiting the Virtual Pet Simulator. Until next time....\n Goodbye! Prasanna Chinnu");
+                break;
+            }
         }
     }
 }
