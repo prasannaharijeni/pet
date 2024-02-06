@@ -48,6 +48,20 @@ class Assignment1
                 Console.WriteLine($"{petName} has been fed. Hunger decreased!!!");
 
             }
-
+            // Play with the pet
+            else if (userInput == "2" && hunger <= 7 && happiness >= 3 && health >= 3)
+            {
+                happiness = Math.Min(10, happiness + 2);
+                hunger = Math.Min(10, hunger + 1);
+                Console.WriteLine($"{petName} had fun playing. Happiness increased, hunger increased slightly.");
+            }
+            // Play with the pet to increase happiness to resume playing
+            else if (userInput == "2" && happiness <= 2)
+            {
+                happiness = Math.Min(10, happiness + 3);
+                hunger = Math.Min(10, hunger + 1);
+                Console.WriteLine($"{petName} had fun playing. Happiness increased!!!");
+            }
+        }
     }
 }
