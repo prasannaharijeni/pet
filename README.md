@@ -1,5 +1,7 @@
 **VIRTUAL PET SIMULATOR PROJECT**
+
 **Overview**
+
 Develop a console application in C# that simulates caring for a virtual pet. This comprehensive project encompasses fundamental programming concepts like basic program structure and console, I/O, data types, type conversion, and control flow elements.
 
 **Detailed Project Features**
